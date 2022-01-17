@@ -2,12 +2,12 @@ let output = "0"
 
 function finalGrade(exam, projects) {
 	if (exam > 90 || projects > 10 ) {
-		output = "100"
+		output = 100
 	} else if (exam > 75 && projects >= 5) {
-		output = "90"
+		output = 90
 	} else if (exam > 50 && projects >= 2) {
-		output = "75"
-	} else output = "0"
+		output = 75
+	} else output = 0
 	return output
 }
 
