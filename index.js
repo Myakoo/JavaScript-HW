@@ -1,16 +1,11 @@
 const cities = ['moscow', 'london', 'berlin', 'porto'];
-let defaultString = "null"
 
-function get(arr, index, forDefault) {
+function get(arr, index, forDefault = null) {
 
 	if (arr[index] !== undefined) {
 		return arr[index]
 	} else if (-1 >= index || arr.length <= index) {
-		
-		if (forDefault === undefined) {
-			return defaultString
-		} else return forDefault
-
+		return forDefault
 	}
 }
 
